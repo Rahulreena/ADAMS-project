@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - ADAMS</title>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    /* Custom styles for the gallery */
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #243c71;
+      padding: 10px 0;
+      color: white;
+      text-align: center;
+    }
+
+    header .logo img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0;
+      display: inline-block;
+    }
+
+    .gallery {
+      padding: 50px 0;
+    }
+
+    .gallery .gallery-item {
+      margin-bottom: 30px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .gallery .gallery-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background-color: #243c71;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 30px;
+    }
+
+    footer .social-links a {
+      color: white;
+      font-size: 20px;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    footer .social-links a:hover {
+      color: #f8c146;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div>
+        <a href="index.html" class="logo"><img src="assets/img/client-img/adam_logo.png" alt=""
+            class="img-fluid"></a>
+        <a href="index.html" style="text-decoration: none; color: #243c71;"><span class="d-none d-md-inline" style="font-weight: 600;">Association Of Doctors And Medical Students</span></a>
+      </div>
+      <!-- Uncomment below if you prefer to use text as a logo -->
+      <!-- <h1 class="logo"><a href="index.html">Butterfly</a></h1> -->
+
+      <nav id="" class="">
+        <form class="d-flex align-items-center" role="search">
+          <input class="form-control me-2 w-100 border-0 shadow-sm" type="search" placeholder="search"
+            aria-label="Search">
+          <a href="#"><i class="bi bi-search"></i></a>
+        </form>
+      </nav>
+      <!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    <center><h2 class="logo m-3">Gallery</h2></center>
+    <section class="gallery">
+      <div class="container">
+        <div class="row">
+          <!-- Gallery Item 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gbm.jpeg" class="glightbox">
+                <img src="assets/img/gallery/gbm.jpeg" alt="Meeting Notice">
+              </a>
+            </div>
+          </div>
+          <!-- Add more gallery items below as needed -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+      </div>
+      <p>&copy; 2024 ADAMS. All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({
+      selector: '.glightbox'
+    });
+  </script>
+</body>
+
+</html>
