@@ -1539,6 +1539,10 @@ section {
   margin-bottom: 10px;
 }
 
+.ticker-list:hover {
+  animation-play-state: paused; /* Pause animation on hover */
+}
+
 @keyframes ticker {
   0% {
       transform: translateY(100%);
